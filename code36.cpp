@@ -9,7 +9,13 @@ int main(){
     cout<<"enter the number to go back :";
     cin>>NUM;
     int n=NUM%7;//for range to 0-6
-    int ans=(DAYS-n)+7;//+7 for making the value positive 
+    int ans=(DAYS-n);//+7 for making the value positive 
+    if(ans>0){
+        cout<<ans;
+    }
+    else{
+        cout<<ans-7;
+    }
     cout << "the ans is :"<<ans;
 
 }
